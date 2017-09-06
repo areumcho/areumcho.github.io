@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/material-icons.css">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professinal web design">
+    <meta name="keywords" content="web design, affordable web design, professinal web design">
+    <meta name="author" content="Areum Cho">
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>AREUM CHO</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .logo img {
+            width: 300px;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+            $('.logo img').click(function() {
+
+                $(this).css('width', '500px');
+            });
+
+
+            $('.skills').click(function() {
+                var skillsTop = $('.section-skills').offset().top;
+
+                $('html,body').animate({
+                    scrollTop: skillsTop
+                }, 1000);
+            });
+
+            $('.projects').click(function() {
+                var projectsTop = $('.section-projects').offset().top;
+
+                $('html,body').animate({
+                    scrollTop: projectsTop
+                }, 1000);
+            });
+
+            $('.about').click(function() {
+                var aboutTop = $('.section-about').offset().top;
+
+                $('html,body').animate({
+                    scrollTop: aboutTop
+                }, 1000);
+            });
+
+            $('.contact').click(function() {
+                var contactTop = $('.section-contact').offset().top;
+
+                $('html,body').animate({
+                    scrollTop: contactTop
+                }, 1000);
+            });
+
+        });
+
+
+
+        //        
+        //        var $overlay = $("<div id = 'overlay'></div>");
+        //        
+        //        $('body').append($overlay);
+        //        var $image = $("<img>");
+        //        
+        //        $overlay.append($image);
+        //         
+        //        var $close = $("<img id = 'closeImage'>");
+        //        
+        //        $overlay.append($close);
+        //        
+        //        $("#imageContainer a").click(function(event) {
+        //            event.preventDefault(); // 
+        //            
+        //            var imageSource = $(this).attr("href");
+        //            $image.attr("src", imageSource);
+        //            
+        //            $close.attr("src", "img/close.png");
+        //            
+        //            $overlay.show();
+        //            
+        //        });
+        //        
+        //    
+        //        
+        //        $close.click(function() {
+        //           $($overlay).hide();
+        //            
+        //        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1 class="logo">AREUM CHO</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="skills">SKILLS</li>
+                <li class="projects">PROJECTS</li>
+                <li class="about">ABOUT</li>
+                <li class="contact">CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-main">
+        <img src="img/main5.png">
+    </section>
+
+    <section class="section-skills">
+
+        <div class="row">
+            <h1><span>SKILLS</span></h1>
+        </div>
+        <div class="row skills">
+            <div class="col span-1-of-4">
+                <img src="img/Developing.png">
+            </div>
+            <div class="col span-1-of-4">
+                <img src="img/Java.png">
+            </div>
+            <div class="col span-1-of-4">
+                <img src="img/Ruby&Rails.png">
+            </div>
+            <div class="col span-1-of-4">
+                <img src="img/Database.png">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col span-1-of-4">
+                <h4>HTML</h4> <br>
+                <h5>CSS</h5> <br>
+                <h4>JavaScript</h4> <br>
+                <h5>jQuery</h5> <br>
+                <h4>PHP</h4> <br>
+                <h5>Responsive</h5> <br>
+
+            </div>
+
+            <div class="col span-1-of-4">
+                <h4>JAVA</h4> <br>
+                <h5>Android</h5> <br>
+                <h4>Mobile Apps</h4> <br>
+            </div>
+
+            <div class="col span-1-of-4">
+                <h4>Ruby</h4> <br>
+                <h5>Rails</h5> <br>
+            </div>
+
+            <div class="col span-1-of-4">
+                <h4>PostgreSQL</h4> <br>
+                <h5>haha</h5> <br>
+                <h4>JAVA</h4> <br>
+                <h5>JAVA</h5> <br>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="section-projects">
+
+        <div class="row">
+            <h1><span>PROJECTS</span></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="col span-1-of-2 project-image">
+                <div class="container">
+
+                    <a href="img/project.png" data-lightbox="gallery">
+                        <img id="img-robotics" class="image" alt="This is 
+                    algonuqin college robotics club website using html, css etc" src="img/project.png">
+                    </a>
+
+                    <div class="project-box">
+                      <p class="text-title">PROJECT</p>
+                        <p class="text-content">IGNITE CODE ACADEMY WEB </p>
+
+                        <p class="text-title">CODED IN</p>
+                        <p class="text-content">HTML, CSS, JAVASCRIPT, JQUERY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-2 project-image">
+                <div class="container">
+
+                    <a href="img/project.png" data-lightbox="gallery">
+                        <img class="image" src="img/project.png">
+                    </a>
+
+                    <div class="project-box">
+
+                        <p class="text-title">PROJECT</p>
+                        <p class="text-content">IGNITE CODE ACADEMY WEB </p>
+
+                        <p class="text-title">CODED IN</p>
+                        <p class="text-content">HTML, CSS, JAVASCRIPT, JQUERY</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 project-image">
+                <div class="container">
+                    <a href="img/project.png" data-lightbox="gallery">
+                        <img class="image" src="img/project.png">
+                    </a>
+
+                    <div class="project-box">
+                        <p class="text-title">PROJECT</p>
+                        <p class="text-content">IGNITE CODE ACADEMY WEB </p>
+
+                        <p class="text-title">CODED IN</p>
+                        <p class="text-content">HTML, CSS, JAVASCRIPT, JQUERY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-2 project-image">
+                <div class="container">
+                    <a href="img/project.png" data-lightbox="gallery">
+                        <img class="image" src="img/project.png">
+                    </a>
+
+                    <div class="project-box">
+                        <p class="text-title">PROJECT</p>
+                        <p class="text-content">IGNITE CODE ACADEMY WEB </p>
+
+                        <p class="text-title">CODED IN</p>
+                        <p class="text-content">HTML, CSS, JAVASCRIPT, JQUERY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="section-about">
+        <div class="row">
+            <h1><span>ABOUT ME</span></h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col span-1-of-3">
+                <img src="img/about_01.png">
+            </div>
+            <div class="col span-1-of-3">
+                <img src="img/about_02.png">
+            </div>
+            <div class="col span-1-of-3">
+                <img src="img/about_03.png">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col span-1-of-3">
+                <h3>
+                    Algonquin College <br> Computer Engineering Student
+                </h3>
+            </div>
+
+            <div class="col span-1-of-3">
+                <h3>
+                    Mentor of AC Robotics <br> Mentor of Ignite code Academy
+                </h3>
+
+            </div>
+
+            <div class="col span-1-of-3">
+                <h3>
+                    Programming Enthusiastic
+                </h3>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="section-contact">
+
+        <div class="row">
+            <h1><span>SAY HI</span></h1>
+        </div>
+
+        <div class="row">
+            <div class="contact-pic">
+                <img src="./img/profile.jpg">
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="get">
+
+
+                    <input type="text" name="name" size="100" maxlength="100" placeholder="NAME: " /> <br />
+
+
+                    <input type="email" name="email" size="100" maxlength="100" placeholder="EMAIL: " /><br />
+
+
+                    <input type="text" name="subject" size="100" maxlength="500" placeholder="SUBJECT: " /> <br />
+
+                    <textarea name="comments" cols="98" rows="6">HELLO AREUM, </textarea><br />
+
+                    <input type="submit" name="SEND" value="SEND" id="send">
+                </form>
+            </div>
+        </div>
+        
+        <div class="row">
+            <img class="social-media" src =/img/github%20copy.png>
+             <img class="social-media" src =/img/github%20copy.png>
+              <img class="social-media" src =/img/github%20copy.png>
+              
+            
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div>
+            <p>COPYRIGHT &copy; 2017 BY AREUM CHO. ALL RIGHTS RESERVED. </p>
+        </div>
+
+
+
+    </footer>
+
+
+    <script>
+    </script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+<!--
+
+<i class="material-icons" style="font-size:50px">rowing</i>
+-->
