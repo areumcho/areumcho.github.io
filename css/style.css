@@ -7,20 +7,24 @@ grey background -> #fbfbfb
 -------------------------------------------------- */
 
 
-
 /* -------------------------------------------------- */
+
+
 /* BASIC SETUP */
-/* -------------------------------------------------- */
 
+
+/* -------------------------------------------------- */
 
 html,
-body { /*standard or base for responsive web design*/
+body {
+    /*standard or base for responsive web design*/
     background-color: #fff;
-    font-family: 'Lato', 'Arial', sans-serif; /*if there are no internet connection 2nd or 3rd options will work*/
-    font-weight: 300; /*default*/
+    font-family: 'Lato', 'Arial', sans-serif;
+    /*if there are no internet connection 2nd or 3rd options will work*/
+    font-weight: 300;
+    /*default*/
     font-size: 20px;
 }
-
 
 a {
     text-decoration: none;
@@ -31,66 +35,66 @@ body h1 {
     font-size: 35px;
     text-align: center;
     font-weight: 300;
-    
 }
 
-body h2{
+body h2 {
     font-size: 23px;
-    margin:20px;
+    margin: 20px;
 }
 
-body ul li{
+body ul li {
     font-size: 18px;
-letter-spacing: 2px;
+    letter-spacing: 2px;
     line-height: 1.3;
-    
 }
 
-h1 span{
+h1 span {
     padding-bottom: 20px;
     border-bottom: 2px solid #FFD816;
 }
-}
 
-body i{
+
+}
+body i {
     height: 50px;
-    width:auto;
+    width: auto;
     color: #FFD816;
 }
-
-
+.row.wrapper,
+.wrapper {
+    width: 1200px;
+    margin: 0 auto !important;
+}
 
 /* -------------------------------------------------- */
+
 /* REUSABLE COMPONENTS */
+
 /* -------------------------------------------------- */
-
-
-.row{
-    max-width: 1140px; /*it changes nave var + logo width */
-    margin: 0 auto; /* top&bottom -> 0 left&right -> auto/ in order to center*/
-}
-
-
-
-section {
-    padding: 100px 0; /*using padding instead of margin because we will preserve background colour later on. space should be inside*/
-}
+.row {
+    max-width: 1140px;
+    /*it changes nave var + logo width */
     
-.box{
+    margin: 0 auto;
+    /* top&bottom -> 0 left&right -> auto/ in order to center*/
+}
+section {
+    padding: 100px 0;
+    /*using padding instead of margin because we will preserve background colour later on. space should be inside*/
+}
+.box {
     padding: 1%;
 }
 
-
-
 /* -------------------------------------------------- */
+
 /* HEADER COMPONENTS */
-/* -------------------------------------------------- */
 
+/* -------------------------------------------------- */
 header {
     margin: 0 auto;
     width: 80%;
 }
-
 header div {
     margin: 20px;
     padding-bottom: 20px;
@@ -102,99 +106,97 @@ header div {
     height: 70px;
     width: auto;
 }
-
 header nav {
     width: 100%;
     text-align: center;
 }
-
 header nav ul li {
     display: inline-block;
     margin: 0 20px;
 }
-
-nav ul li a{
+nav ul li a {
     text-decoration: none;
 }
 header .fixed.nav,
-.section-main .fixed-nav{
+.section-main .fixed-nav {
     display: none;
 }
-
-.fixed-nav{
-    display: inline-block; /*they can be side by side*/
+.fixed-nav {
+    display: inline-block;
+    /*they can be side by side*/
+    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
-    z-index: 9999; /*stack of elements always on the top of other elements always on top!*/
+    z-index: 9999;
+    /*stack of elements always on the top of other elements always on top!*/
 }
-
 .fixed-nav nav {
     float: left;
     margin-top: 55px;
 }
-
-.fixed-nav li{
-    display: inline-block; /*they can be side by side*/
+.fixed-nav li {
+    display: inline-block;
+    /*they can be side by side*/
+    
     margin-left: 40px;
 }
 
 /* -------------------------------------------------- */
+
 /* SECTION-MAIN */
+
 /* -------------------------------------------------- */
-
-
 .section-main {
-    height: 600px;
+    height: auto;
     width: auto;
     padding: 60px;
 }
-
+.section-main .wrapper {
+    margin: 0 auto;
+}
 .section-main img {
-    
-position:absolute;
-left: 50%;
-margin-left: -566px;
-margin-top: -10px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 /* -------------------------------------------------- */
+
 /* SECTION-SKILLS */
+
 /* -------------------------------------------------- */
-
-
-.section-skills{
-   /*background-image: url(/img/dot.png);*/
-    background-position:repeat;
+.section-skills {
+    /*background-image: url(/img/dot.png);*/
+    
+    background-position: repeat;
     overflow: hidden;
     margin: 10px 10px;
     background-color: #FEFFE5;
-
 }
-
 .section-skills .col.span-1-of-4 {
     margin: 0;
     margin-bottom: 35px;
     text-align: center;
 }
-    
-
-.section-skills img{
-        margin: 0 auto;
-        width: 200px;
-        height: auto;
-    }
-
-.section-skills .title{
-    margin: 0;
-    text-align: center;   
+.section-skills img {
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
 }
-
+.section-skills .title {
+    margin: 0;
+    text-align: center;
+}
 .section-skills h4,
-.section-skills h5{
+.section-skills h5 {
     background-color: #C8C8C8;
     margin: 0 20px;
     text-align: center;
@@ -202,59 +204,54 @@ margin-top: -10px;
     padding-bottom: 10px;
     font-weight: 400;
 }
-
-
 .section-skills h5 {
-    background-color:#FEF68F;
+    background-color: #FEF68F;
 }
+
 /* -------------------------------------------------- */
+
 /* SECTION-projects */
+
 /* -------------------------------------------------- */
+.col.span-1-of-2.project-image {
+    margin: 2px !important;
+}
 .container {
-    
     position: relative;
     width: 100%;
     height: 100%;
 }
-
 .section-projects img {
-    opacity:1;
+    opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
 }
-
 .project-box {
     transition: 0.5s ease;
     opacity: 0;
-    position:absolute;
-    top:50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
-
-.container:hover .image{
+.container:hover .image {
     opacity: 0.2;
 }
-
-
-.container:hover .project-box{
+.container:hover .project-box {
     opacity: 1;
 }
-
 .text-title,
-.text-content{
+.text-content {
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     text-align: center;
     line-height: 2;
-    
 }
-
 .text-title {
     font-weight: 400;
 }
@@ -294,108 +291,83 @@ margin-top: -10px;
 
 */
 
-
 /* -------------------------------------------------- */
+
 /* SECTION-ABOUT */
-/* -------------------------------------------------- */
 
+/* -------------------------------------------------- */
 .section-about {
     margin: 0 10px;
     background-color: #FEFFE5;
 }
-
-
-
 .section-about .col.span-1-of-3 {
     margin: 0;
     margin-bottom: 35px;
     text-align: center;
 }
-
 .section-about img {
+    margin-bottom: 30px;
     width: 200px;
     height: auto;
 }
-
-.section-about h3 {
-    font-weight: 400;
+.section-about ul li {
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 1.8;
 }
 
-
 /* -------------------------------------------------- */
+
 /* SECTION-CONTACT */
+
 /* -------------------------------------------------- */
-
 .section-contact {
-   
     margin: 0 10px;
-    background-color:#fbfbfb ;
+    background-color: #fbfbfb;
     background-repeat: repeat;
-
 }
-
-.section-contact h2  {
+.section-contact h2 {
     margin: 50px;
     text-align: center;
 }
-
-
 .section-contact .row {
     overflow: hidden;
 }
-
 .contact-pic {
     float: left;
     width: 40%;
     text-align: center;
-
 }
-
 .contact-pic img {
     width: 60%;
     margin-top: 10px;
 }
-
-
-
 .contact-form {
-  
     width: 60%;
     float: right;
 }
-
-
-
-
 form input,
 textarea {
+    width: 500px;
     padding: 10px 0;
     margin: 10px 0;
 }
-
 textarea {
     padding-right: 2px;
 }
-
-form input[type=submit] { 
-    padding:10px 30px; 
-    background:#000; 
-    color:#FFD816; 
-    border:0 none;
-    cursor:pointer;
-    position: relative;
+form input[type=submit] {
+    padding: 10px 30px;
+    background: #000;
+    color: #FFD816;
+    border: 0 none;
+    cursor: pointer;
     left: 50%;
-    margin-left: -65px;
-    
-
 }
-
 .social-row {
     margin-top: 90px;
     border-top: 1px solid grey;
     text-align: center;
 }
-
 .social-media {
     padding: 0 30px;
     padding-top: 100px;
@@ -404,16 +376,15 @@ form input[type=submit] {
 }
 
 /* -------------------------------------------------- */
+
 /* FOOTER */
+
 /* -------------------------------------------------- */
-
-
 footer div {
     margin: 0 auto;
     width: 80%;
 }
-
-footer div p{
+footer div p {
     margin: 20px;
     padding-top: 20px;
     padding-bottom: 80px;
@@ -421,6 +392,75 @@ footer div p{
     text-align: center;
 }
 
+/* ----------------------------- */
 
+/*        Media Queries          */
 
+/* ----------------------------- */
+@media only screen and (max-width: 1200px) {
+    .row.wrapper,
+    .wrapper {
+        width: 90%;
+    }
+    
+    form input,
+    textarea {
+        width: 80%;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+}
+@media only screen and (max-width: 1120) {
+    .row.wrapper,
+    .wrapper {
+        width: 90%;
+    }
+    /*
+    .col.span-1-of-2.project-image {
+        margin-bottom: 90px;
+    }
+    
+    section-projects img {
+        margin-bottom: 90px;
+    }
+*/
+}
+@media only screen and (max-width: 850px) {
+    .row.wrapper,
+    .wrapper {
+        width: 90%;
+    }
+    
+    section-main img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .contact-pic {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    
+    .contact-form {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    header nav {
+        display: none;
+    }
+}
 
+/* Samll phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    header .navi-bar {
+        display: none;
+    }
+}
