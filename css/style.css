@@ -326,6 +326,7 @@ header .fixed.nav,
     background-color: #fbfbfb;
     background-repeat: repeat;
 }
+/*
 .section-contact h2 {
     margin: 50px;
     text-align: center;
@@ -363,9 +364,10 @@ form input[type=submit] {
     cursor: pointer;
     left: 50%;
 }
+*/
 .social-row {
     margin-top: 90px;
-    border-top: 1px solid grey;
+/*    border-top: 1px solid grey;*/
     text-align: center;
 }
 .social-media {
