@@ -74,12 +74,31 @@
                 }, 1000);
             });
 
+        
+        
+            $(window).scroll(function(){
+                var headH = $('header').height();
+                
+                if( $(this).scrollTop() > headH){
+                   $('header nav').css({'position':'fixed','width:':'100%','height':'70px','top':'0','left':'0','background':'#FCFC89', 'z-index':'100', 'padding-top':'40px', 'opacity':'0.9'});
+                }
+                else{
+                    $('header nav').css({'position':'static','background':'none'});
+                }
+            });
+        
+        
+        
+        
         });
-        
-        
-        
+    
         
         /*Sticky  Navi*/
+        
+        /*var headH = $('header').height() + $('section').height();*/
+        
+        
+        
         
         
     </script>
